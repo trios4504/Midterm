@@ -1,0 +1,13 @@
+.container {font-size: 40px; width: 100vw;height: 100vh; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;grid-template-areas: "advert advert advert advert""logo1 header header logo2""video video text text""video video text text""video video text text""footer footer footer footer"; grid-gap: 10px 10px;}
+    .item1 {background: none; grid-area: advert;z-index: 1}
+    .item2 {background: none; grid-area: video; z-index: 2;}
+    .item3 {grid-area: text;z-index: 1}
+    .item4 {background: purple; grid-area: footer;z-index: 1}
+    #vidbox {animation-name: vidbox; animation-duration: 7s; animation-fill-mode: forward;}
+    @keyframes vidbox {0%{transform: scale(4.7);}50%{transform: scale(2.5);}100%{transform: scale(1.0);}}
+    .item5 {position: sticky; grid-area: header; z-index: 1; text-align: center;}
+    .item6 {grid-area: logo1; z-index: 1;}
+    .item7 {grid-area: logo2; z-index: 1;justify-self: right;}
+    a:-webkit-any-link {color: #FFFFFF;font-family: 'Franklin Gothic Medium';text-decoration: underline; font-size: 50px;}
+    h1 {color: #FFFFFF;font-family: 'Franklin Gothic Medium'; font-size: 95px;}

@@ -1,0 +1,9 @@
+.container {font-size: 40px; width: 100vw;height: 100vh; background: Gray; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;grid-template-areas: "advert advert advert advert""header header header header""video video text text""video video text text""video video text text""footer footer footer footer"; grid-gap: 10px 10px;}
+    .item1 {background: Dodgerblue; grid-area: advert;z-index: 1}
+    .item2 {background: red; grid-area: video; z-index: 2;}
+    .item3 {background: orange; grid-area: text;z-index: 1}
+    .item4 {background: purple; grid-area: footer;z-index: 1}
+    #vidbox {animation-name: vidbox; animation-duration: 10s; animation-fill-mode: forward;}
+    @keyframes vidbox {0%{grid-area: 1/1/7/5;}50%{grid-area: 3/1/6/4;}100%{grid-area: 3/1/6/3;}}
+    .item5 {background: teal;position: sticky; grid-area: header; z-index: 1;}
